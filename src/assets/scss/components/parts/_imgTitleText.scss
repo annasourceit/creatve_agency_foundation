@@ -1,0 +1,100 @@
+.imgTitleText {
+  @extend .row;
+  @extend .align-middle;
+
+  &__img {
+    @extend .column;
+    @extend .small-12;
+    @extend .medium-6;
+    @extend .large-6;
+    position: relative;
+    padding: 20px 0;
+
+    @include breakpoint(xs) {
+      & img {
+        position: static;
+        top: 0;
+        left: 0;
+      }
+    }
+    @include breakpoint(sm) {
+      & img {
+        position: static;
+        top: 0;
+        left: 0;
+      }
+    }
+    @include breakpoint(tb) {
+      & img {
+        position: absolute;
+        top: -160px;
+        left: 0;
+      }
+    }
+    @include breakpoint(desktop) {
+      & img {
+        position: absolute;
+        top: -160px;
+        left: 0;
+      }
+    }
+  }
+  &__titleText {
+    @extend .column;
+    @extend .small-12;
+    @extend .medium-6;
+    @extend .large-6;
+    padding: 20px 0;
+  }
+}
+.titleText__title {
+  font-family:$headers-font-family;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  @include afterTitle;
+}
+.titleText__text {
+  font-family: $main-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.titleText__btn {
+  text-align: right;
+  position: relative;
+  & .btn {
+    position: absolute;
+    top: -26px;
+    right: 0;
+  }
+  @include breakpoint(xs) {
+    & .btn {
+      position: static;
+      top: 0;
+      right: 0;
+    }
+  }
+  @include breakpoint(sm) {
+    & .btn {
+      position: static;
+      top: 0;
+      right: 0;
+    }
+  }
+  @include breakpoint(tb) {
+    & .btn {
+      position: absolute;
+      top: -26px;
+      right: 0;
+    }
+  }
+  @include breakpoint(desktop) {
+    & .btn {
+      position: absolute;
+      top: -6px;
+      right: 0;
+    }
+  }
+}

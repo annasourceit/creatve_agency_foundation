@@ -1,0 +1,66 @@
+.main-title {
+  margin: 150px 0 125px 0;
+  @extend .row;
+  @extend .align-center;
+  @extend .column;
+  &__slides {
+    @extend .column;
+    @extend .small-12;
+    text-align: center;
+  }
+  &__abovehead {
+    font-family: $headers-font-family;
+    font-size: rem-calc(18);
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    & span {
+      background-color: #7beec7;
+      padding: 13px 20px;
+    }
+
+  }
+  &__head {
+    font-family: $headers-font-family;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    & span {
+      display: inline-block;
+      padding: 25px 45px;
+      border: 10px solid $body-font-color;
+    }
+
+  }
+  @include breakpoint(xs) {
+    .main-title__head {
+      font-size: 40px;
+    }
+  }
+  @include breakpoint(sm) {
+    .main-title__head {
+      font-size: 40px;
+    }
+  }
+  @include breakpoint(tb) {
+    .main-title__head {
+      font-size: 48px;
+    }
+  }
+  @include breakpoint(desktop) {
+    .main-title__head {
+      font-size: 48px;
+    }
+  }
+  &__text {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: $main-font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

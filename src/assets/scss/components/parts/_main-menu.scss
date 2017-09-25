@@ -1,0 +1,85 @@
+.main-header {
+  @include bg-img("../../assets/img/mainBanner.png");
+  &__row {
+    @include  flex-grid-column(12,15);
+    @include flex-grid-row();
+    padding-top: 43px;
+  }
+  &__logo {
+    @include flex-grid-column(6);
+    height: 100px;
+    line-height: 100px;
+  }
+  &__menu {
+    @include flex-grid-column(6);
+    .desktop-nav__firstlevel {
+    }
+  }
+  .desktop-nav__firstlevel {
+    text-align: right;
+
+    .firstlevel__item {
+      display: inline-block;
+      line-height: 100px;
+      font-family: $headers-font-family;
+      margin-left: 10px;
+      text-transform: uppercase;
+      font-size: $global-font-size;
+      font-weight: 700;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 50px;
+        opacity: 0;
+        left: 0;
+        content: "";
+        width: 50%;
+        height: 2px;
+        background-color: #7beec7;
+        transition: all 0.3s;
+      }
+    }
+    & > li:hover > .firstlevel__item:before {
+      top: 35px;
+      opacity: 1;
+    }
+  }
+  @include breakpoint(xs) {
+    .desktop-nav__firstlevel {
+      display: none;
+    }
+    .main-header__mobile-nav {
+      display: block;
+    }
+  }
+  @include breakpoint(sm) {
+    .desktop-nav__firstlevel {
+      display: none;
+    }
+    .main-header__mobile-nav {
+      display: block;
+    }
+  }
+  @include breakpoint(tb) {
+    .desktop-nav__firstlevel {
+      display: none;
+    }
+    .main-header__mobile-nav {
+      display: block;
+    }
+  }
+  @include breakpoint(desktop) {
+    .desktop-nav__firstlevel {
+      display: block;
+    }
+    .main-header__mobile-nav {
+      display: none;
+    }
+  }
+  .mobileMenu {
+    display: none;
+  }
+  .mobileMenu--active {
+    display: block;
+  }
+}

@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a ,a:hover,a:focus {
+  text-decoration: none;
+  color:#60606e;
+}
+
+html {
+  width: 100%;
+  font-family: $main-font-family;
+  font-size: $sm-font-size;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headers-font-family;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
