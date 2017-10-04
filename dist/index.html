@@ -17,6 +17,7 @@
     <header class="main-header">
     
       <div class="main-header__row">
+    
         <div class="main-header__logo">
           <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
         </div>
@@ -34,7 +35,7 @@
                   <li><a href="#" class="secondlevel__item">second project</a></li>
                 </ul>
               </li>
-              <li><a href="#" class="firstlevel__item">blog</a>
+              <li><a href="blog.html" class="firstlevel__item">blog</a>
                 <ul class="desktop-nav__secondlevel" hidden>
                   <li><a href="#" class="secondlevel__item">post 2</a></li>
                   <li><a href="#" class="secondlevel__item">post 1</a></li>
@@ -48,44 +49,18 @@
             <div class="menu-icon">
               <span class="menu-icon__line"></span>
             </div>
-            <ul id="mobileMenu" class="mobileMenu">
-              <li class="mobileMenu__item"><a href="#" class="">home</a></li>
-              <li class="mobileMenu__item"><a href="#" class="">about us</a></li>
-              <li class="mobileMenu__item"><a href="#" class="">services</a></li>
-              <li class="mobileMenu__item"><a href="#" class=""></a>portfolio</li>
-              <li class="mobileMenu__item"><a href="#" class=""></a>blog</li>
-              <li class="mobileMenu__item"><a href="#" class=""></a>contact us</li>
-            </ul>
     
           </nav><!-- .mobile-nav -->
+    
+          <ul id="mobileMenu" class="mobileMenu">
+            <li class="mobileMenu__item"><a href="index.html" class="">home</a></li>
+            <li class="mobileMenu__item"><a href="#" class="">about us</a></li>
+            <li class="mobileMenu__item"><a href="#" class="">services</a></li>
+            <li class="mobileMenu__item"><a href="#" class="">portfolio</a></li>
+            <li class="mobileMenu__item"><a href="blog.html" class="">blog</a></li>
+            <li class="mobileMenu__item"><a href="#" class="">contact us</a></li>
+          </ul>
         </div><!-- .main-menu -->
-    
-        <!--<nav class="header__menu">-->
-    
-          <!--<div class="header__menu-icon menu-icon">-->
-            <!--<span class="menu-icon__line"></span>-->
-          <!--</div>-->
-    
-          <!--<ul class="menu">-->
-            <!--<li class="menu__item">-->
-              <!--<a class="menu__link" href="#">Home</a>-->
-            <!--</li>-->
-            <!--<li class="menu__item">-->
-              <!--<a class="menu__link" href="#about">About</a>-->
-            <!--</li>-->
-            <!--<li class="menu__item">-->
-              <!--<a class="menu__link" href="#">Services</a>-->
-            <!--</li>-->
-            <!--<li class="menu__item">-->
-              <!--<a class="menu__link" href="#">Portfolio</a>-->
-            <!--</li>-->
-            <!--<li class="menu__item">-->
-              <!--<a class="menu__link" href="#">Blog</a>-->
-            <!--</li>-->
-            <!--<li class="menu__item">-->
-              <!--<a class="menu__link" href="#">Contact</a>-->
-            <!--</li>-->
-          <!--</ul>-->
     
        <!-- MAIN TITLE  -->
         <section class="main-title">
@@ -136,7 +111,7 @@
       </div><!--.container-->
     </header>
     
-    <main class="main">
+    <div class="main">
       <section class="titleSubtitle">
         <h1 class="titleText__title">
           <span>why choose us</span>
@@ -195,14 +170,137 @@
         <div class="listsImg__img">
           <img src="assets/img/home_img1.png" alt="">
         </div>
-    
       </section>
-    
-    </main>
-    
+    </div>
     
     
-
+    <div class="portfolio">
+      <section class="titleSubtitle">
+        <h1 class="titleText__title">
+          <span>our portfolio</span>
+        </h1>
+        <h2 class="titleText__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </h2>
+      </section>
+      <section class="isotope">
+    
+        <div class="portfolio__buttons">
+          <h1 class="isotope__head">choose category</h1>
+    
+          <div class="button-group filter-button-group">
+    
+            <button data-filter="*">all</button>
+            <button data-filter=".webdesign">webdesign</button>
+            <button data-filter=".graphicDesign">graphic design</button>
+            <button data-filter=".fashion">fashion</button>
+            <button data-filter=".logoDesign">logo design</button>
+            <button data-filter=".advertising">advertising</button>
+    
+          </div>
+        </div>
+    
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <a href="#" class="element-item webdesign">
+            <img src="assets/img/portfolio_img1.png" alt="">
+          </a>
+          <a href="#" class="element-item graphicDesign">
+            <img src="assets/img/portfolio_img2.png" alt="">
+          </a>
+          <a href="#" class="element-item fashion">
+            <img src="assets/img/portfolio_img3.png" alt="">
+          </a>
+          <a href="#" class="element-item logoDesign">
+            <img src="assets/img/portfolio_img4.png" alt="">
+          </a>
+          <a href="#" class="element-item webdesign">
+            <img src="assets/img/portfolio_img5.png" alt="">
+          </a>
+          <a href="#" class="element-item graphicDesign">
+            <img src="assets/img/portfolio_img6.png" alt="">
+          </a>
+          <a href="#" class="element-item fashion">
+            <img src="assets/img/portfolio_img7.png" alt="">
+          </a>
+          <a href="#" class="element-item advertising">
+            <img src="assets/img/portfolio_img8.png" alt="">
+          </a>
+          <a href="#" class="element-item advertising">
+            <img src="assets/img/portfolio_img9.png" alt="">
+          </a>
+        </div>
+      </section>
+    </div>
+    
+    <section class="greenSection">
+      <div class="greenSection__row">
+          <div class="greenSection__column">
+            <p class="greenSection__questiontext">
+              you think we're cool? let's work together
+            </p>
+            <a href="#" class="btn_white">
+              <span>get in touch</span>
+            </a>
+          </div>
+    
+        <div class="greenSection__column">
+            <div class="white-section">
+              <h4 class="white-section__title">stay informed with our newsletter</h4>
+              <p class="white-section__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <form action="#" method="post" class="form">
+                <p class="form__input">
+                  <input type="text" name="email" placeholder="your email">
+                </p>
+                <button type="submit" class="form__btn">
+                  <span>send</span>
+                </button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="main-footer">
+    
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#" class="footer-nav__item">Home</a></li>
+          <li><a href="#" class="footer-nav__item">about us</a></li>
+          <li><a href="#" class="footer-nav__item">services</a></li>
+          <li><a href="#" class="footer-nav__item">portfolio</a></li>
+          <li><a href="#" class="footer-nav__item">blog</a></li>
+          <li><a href="#" class="footer-nav__item">contact us</a></li>
+        </ul>
+      </nav>
+    
+    
+      <div class="footer-copyrightIcons">
+          <div class="footer-copyright">
+            created by akhouad &copy;2016. all rights reserved.
+          </div>
+          <ul class="social-icons social-icons--right">
+            <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+            <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+            <li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
+            <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
+            <li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
+            <li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
+          </ul>
+      </div>
+    
+    </footer>
+    
+    
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

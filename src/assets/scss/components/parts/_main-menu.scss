@@ -1,16 +1,17 @@
 .main-header {
   @include bg-img("../../assets/img/mainBanner.png");
-  &__row {
+}
+.main-header__row {
     @include  flex-grid-column(12,15);
     @include flex-grid-row();
     padding-top: 43px;
   }
-  &__logo {
+.main-header__logo {
     @include flex-grid-column(6);
     height: 100px;
     line-height: 100px;
   }
-  &__menu {
+.main-header__menu {
     @include flex-grid-column(6);
     .desktop-nav__firstlevel {
     }
@@ -81,5 +82,26 @@
   }
   .mobileMenu--active {
     display: block;
+  }
+
+.mobileMenu {
+  width: 100%;
+  background-color: #60606e;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  padding: 20px;
+  z-index: 5;
+  &__item {
+    display: list-item;
+    text-align: center;
+    height: 50px;
+    > a {
+      color: white;
+      font-family: $headers-font-family;
+      font-size: $global-font-size;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
   }
 }

@@ -50,5 +50,11 @@
     @extend .medium-6;
     @extend .large-6;
     text-align: right;
+    & img:hover {
+      animation-name: pulse;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-iteration-count: 1;
+    }
   }
 }

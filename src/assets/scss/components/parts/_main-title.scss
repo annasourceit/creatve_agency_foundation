@@ -31,6 +31,16 @@
       display: inline-block;
       padding: 25px 45px;
       border: 10px solid $body-font-color;
+      &:hover {
+        will-change: scale3d;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+      }
+
     }
 
   }
