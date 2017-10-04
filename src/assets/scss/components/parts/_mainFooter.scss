@@ -1,0 +1,83 @@
+.main-footer {
+  padding: 50px 0;
+  @extend .row;
+}
+.footer-nav {
+  color: #9a9a9a;
+  font-family: $main-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  @extend .column;
+  @extend .medium-8;
+  @extend .small-12;
+  & ul {
+    padding-left: 0;
+    @media screen and (max-width:768px) {
+      text-align: center;
+    }
+  }
+  & li {
+    margin-right: 12px;
+    &:hover {
+      border-bottom: 1px solid #9a9a9a;
+    }
+    &:after {
+      content: '-';
+      padding-left: 12px;
+    }
+    &:last-child:after {
+      content: '';
+    }
+    @media screen and (max-width:479px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      display: block;
+      text-align: center;
+      &:after {
+        content: '';
+      }
+    }
+
+  }
+}
+.footer-copyrightIcons {
+  @extend .column;
+  @extend .medium-4;
+  @extend .small-12;
+}
+.footer-copyright {
+  color: #9a9a9a;
+  font-family: $main-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  @media screen and (max-width:479px) {
+    text-align: center;
+  }
+  @media screen and (max-width:768px) {
+    text-align: center;
+  }
+}
+.social-icons {
+  margin-top: 30px;
+  padding-left: 0;
+  color: #999999;;
+  font-family: Ionicons;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.social-icons--right {
+  text-align: right;
+  & li {
+    margin-left: 10px;
+  }
+  @media screen and (max-width:479px) {
+    text-align: center;
+  }
+  @media screen and (max-width:768px) {
+    text-align: center;
+  }
+}

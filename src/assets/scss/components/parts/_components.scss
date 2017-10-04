@@ -4,8 +4,8 @@
   position: relative;
   top: 25%;
   right: -70%;
-  width: 3em;
-  height: 3em;
+  width: 35px;
+  height: 35px;
   border-radius: 5px;
 }
 .menu-icon {
@@ -13,8 +13,8 @@
   top: 19px;
   left: 7px;
   display: block;
-  width: 2em;
-  height: 2em;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   margin: 0 auto;
   transition: all 0.3s;
@@ -24,7 +24,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    margin-top: -1em;
+    margin-top: -13.6px;
     background-color: #7beec7;
     border-radius: 3px;
     &:before,
@@ -87,3 +87,4 @@
     color: #7beec7;
   }
 }
+

@@ -14495,17 +14495,51 @@ window.$ = _jquery2.default;
 //Project JS
 
 (0, _jquery2.default)(document).ready(function () {
-    (0, _jquery2.default)('.menu-icon').on('click', function () {
-        (0, _jquery2.default)(this).toggleClass('menu-icon--open');
+    //Функция, которая определяет элемент в зоне видимости
+    function isScrolledIntoView(elem) {
+        var offset = ((0, _jquery2.default)(window).height() - (0, _jquery2.default)(elem).height()) / 2;
+        if (elem.length) {
+            var docViewTop = (0, _jquery2.default)(window).scrollTop();
+            var docViewBottom = docViewTop + (0, _jquery2.default)(window).height();
 
-        if ((0, _jquery2.default)(this).hasClass('menu-icon--open')) {
-            (0, _jquery2.default)('.menu').css('display', 'flex');
-        } else {
-            (0, _jquery2.default)('.menu').css('display', 'none');
+            var elemTop = (0, _jquery2.default)(elem).offset().top;
+            var elemBottom = elemTop + (0, _jquery2.default)(elem).height();
+
+            return elemBottom <= docViewBottom + offset && elemTop >= docViewTop + offset;
         }
+        return false;
+    }
+    (0, _jquery2.default)('.main-header__mobile-nav').on('click', function () {
+        (0, _jquery2.default)('.menu-icon').toggleClass('menu-icon--open');
+
+        // if ($('.menu-icon').hasClass('menu-icon--open')) {
+        //     $('.menu-icon').css('display', 'flex');
+        // } else {
+        //     $('.menu-icon').css('display', 'none');
+        // }
         (0, _jquery2.default)('#mobileMenu').toggleClass('mobileMenu--active');
     });
+
+    (0, _jquery2.default)(window).scroll(function () {});
 });
+
+;(function ($) {
+    "use strict";
+    //----------------------------------------Isotope---------------------------------------------
+
+    var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        percentPosition: true,
+        masonry: {
+            columnWidth: '.grid-sizer'
+        }
+    });
+
+    $('.filter-button-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+})(jQuery);
 
 /***/ }),
 /* 21 */

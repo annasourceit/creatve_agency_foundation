@@ -38,7 +38,7 @@
 //@include foundation-reveal;
 //@include foundation-switch;
 //@include foundation-table;
-//@include foundation-tabs;
+@include foundation-tabs;
 //@include foundation-thumbnail;
 //@include foundation-title-bar;
 //@include foundation-tooltip;
@@ -69,6 +69,10 @@ Mixins
 -------------------------------------------------*/
 @import "components/_mixins";
 /*-------------------------------------------------
+Animation
+-------------------------------------------------*/
+@import 'components/_animation';
+/*-------------------------------------------------
 Global
 -------------------------------------------------*/
 @import "components/_global";
@@ -97,3 +101,35 @@ Title and Text
 Lists and Image
 -------------------------------------------------*/
 @import "components/parts/_listsImg";
+/*-------------------------------------------------
+Tabs
+-------------------------------------------------*/
+@import "components/parts/_portfolio";
+/*-------------------------------------------------
+Header
+-------------------------------------------------*/
+@import "components/parts/_header";
+/*-------------------------------------------------
+Green section
+-------------------------------------------------*/
+@import "components/parts/_greenSection";
+/*-------------------------------------------------
+Main footer
+-------------------------------------------------*/
+@import "components/parts/_mainFooter";
+/*-------------------------------------------------
+Blog pages
+-------------------------------------------------*/
+@import "components/parts/_blog";
+/*-------------------------------------------------
+Tabs
+-------------------------------------------------*/
+@import "components/parts/_tabs";
+/*-------------------------------------------------
+Search
+-------------------------------------------------*/
+@import "components/parts/_search";
+/*-------------------------------------------------
+Categories
+-------------------------------------------------*/
+@import "components/parts/_categories";

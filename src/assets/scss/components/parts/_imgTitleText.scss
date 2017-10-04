@@ -9,6 +9,15 @@
     @extend .large-6;
     position: relative;
     padding: 20px 0;
+    & img:hover {
+      will-change: scale3d;
+      animation-name: pulse;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-iteration-count: 1;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+    }
 
     @include breakpoint(xs) {
       & img {
